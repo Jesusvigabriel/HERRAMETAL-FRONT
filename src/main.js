@@ -7,6 +7,15 @@ import axios from 'axios'
 import VueSweetalert2 from 'vue-sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
 
+// Verificar variables de entorno
+console.log('=== Variables de entorno ===');
+console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('VUE_APP_FIREBASE_PROJECT_ID:', process.env.VUE_APP_FIREBASE_PROJECT_ID);
+console.log('VUE_APP_API_URL:', process.env.VUE_APP_API_URL);
+console.log('VUE_APP_Nombre:', process.env.VUE_APP_Nombre);
+console.log('VUE_APP_Quien_Soy:', process.env.VUE_APP_Quien_Soy);
+console.log('=========================');
+
 // Configuración de SweetAlert2
 Vue.use(VueSweetalert2, {
   confirmButtonColor: '#1976D2', // Color del botón de confirmar
