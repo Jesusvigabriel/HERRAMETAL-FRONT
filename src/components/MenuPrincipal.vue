@@ -17,7 +17,7 @@
             contain
             width="40"
             height="40"
-            alt="AreaZero"
+            alt="HERRAMETAL"
             class="ml-2"
           />
         </v-toolbar-title>
