@@ -364,7 +364,26 @@ export default {
       ListaDeMenusAdmin: [],
       ListaDeMenus: [],
       menu: false,
-      nombreLogo: require(`@/assets/IsoLogo_${process.env.VUE_APP_Quien_Soy}.png`),
+      // Carga de logo: primero el logo de HERRAMETAL si existe, luego variantes por brand y fallbacks
+      nombreLogo: (() => {
+        try {
+          return require('@/assets/herrametal/logo.png')
+        } catch (e0) {
+          try {
+            return require('@/assets/herrametal/logo.svg')
+          } catch (e0b) {
+            try {
+              return require(`@/assets/IsoLogo_${process.env.VUE_APP_Quien_Soy}.png`)
+            } catch (e1) {
+              try {
+                return require('@/assets/IsoLogo_Area.png')
+              } catch (e2) {
+                return require('@/assets/Logo_Area_Completo.png')
+              }
+            }
+          }
+        }
+      })(),
       gruposMobile: [] // Para el Drawer mobile
     }
   },
