@@ -1,0 +1,70 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencias
+node_modules/
+/.pnp
+.pnp.js
+
+# Archivos de construcción
+/dist
+/build
+/.nuxt
+/.output
+
+# Archivos de entorno
+.env
+.env.local
+.env.*
+.env.*.local
+!.env.example
+
+# Archivos de configuración con credenciales
+*config*.json
+*credentials*
+*secret*
+*password*
+*key*
+*aws*
+*access*
+*token*
+
+# Archivos de logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos de IDE y editores
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# Archivos temporales
+*.bak
+*.tmp
+*.temp
+*~
+
+# Archivos binarios/respaldos
+distfront.zip
+*.backup
+
+# Archivos de testing
+/coverage
+/test/e2e/videos/
+/test/e2e/screenshots/
+
+# Archivos de sistema
+.cache/
+.temp/
+.tmp/
